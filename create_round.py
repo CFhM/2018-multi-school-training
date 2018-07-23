@@ -1,5 +1,6 @@
 import os
 import sys
+import shutil
 
 def template(filepath):
     with open(filepath, 'w') as f:
@@ -32,6 +33,11 @@ def main():
                 filename = str(1000 + i) + '.cpp'
                 open(os.path.join(contest_dir_path, filename), 'w')
                 template(os.path.join(contest_dir_path, filename))
+            if os.path.exists('test.py'):
+                shutil.copy('test.py', os.path.join(contest_dir_path, 'test.py'))
+            open('in.txt', 'w')
+            open('gen.py', 'w')
+            open('std.cpp', 'w')
 
 
 if __name__ == '__main__':
