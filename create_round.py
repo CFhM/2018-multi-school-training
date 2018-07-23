@@ -12,7 +12,8 @@ typedef vector<int> vi;\n\
 #define push_back pb\n\n\
 const int mod = 1e9 + 7;\n\
 const double pi = acos(-1.0);\n\
-const int maxn = 1e5 + 5;\n')
+const int maxn = 1e5 + 5;\n\
+// head\n\n')
 
 
 def main():
