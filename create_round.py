@@ -3,19 +3,8 @@ import sys
 import shutil
 
 def template(filepath):
-    with open(filepath, 'w') as f:
-        f.write('\
-#include <bits/stdc++.h>\n\
-using namespace std;\n\n\
-typedef long long ll;\n\
-typedef vector<int> vi;\n\
-#define make_pair mp\n\
-#define push_back pb\n\n\
-const int mod = 1e9 + 7;\n\
-const double pi = acos(-1.0);\n\
-const int maxn = 1e5 + 5;\n\
-// head\n\n')
-
+    if os.path.exists('template.cpp'):
+        shutil.copy('template.cpp', filepath)
 
 def main():
     try:
