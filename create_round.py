@@ -35,9 +35,9 @@ def main():
                 template(os.path.join(contest_dir_path, filename))
             if os.path.exists('test.py'):
                 shutil.copy('test.py', os.path.join(contest_dir_path, 'test.py'))
-            open('in.txt', 'w')
-            open('gen.py', 'w')
-            open('std.cpp', 'w')
+            open(os.path.join(contest_dir_path, 'in.txt'), 'w')
+            open(os.path.join(contest_dir_path, 'std.cpp'), 'w')
+            open(os.path.join(contest_dir_path, 'gen.py'), 'w')
 
 
 if __name__ == '__main__':
