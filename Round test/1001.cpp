@@ -12,7 +12,7 @@ const int maxn = 1e5 + 5;
 // head
 
 int main() {
-    cout << "hello worldqweqweqweqweqeqweqe" << endl;
+    cout << "acm is funny!" << endl;
     int n; cin >> n;
     int sum = 0;
     for (int i = 0; i < n; ++i) {
